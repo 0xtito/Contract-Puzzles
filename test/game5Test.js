@@ -22,11 +22,7 @@ describe("Game5", function() {
       value: ethers.utils.parseEther('1.0')
     })
 
-    console.log(await wallet.getBalance());
-
     // good luck
-
-
     await game.connect(wallet).win();
 
     // leave this assertion as-is
